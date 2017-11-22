@@ -1,0 +1,6 @@
+framework module Pods_iOS_Playground {
+  umbrella header "Pods-iOS_Playground-umbrella.h"
+
+  export *
+  module * { export * }
+}
