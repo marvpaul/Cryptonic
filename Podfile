@@ -6,7 +6,7 @@ target 'iOS_Playground' do
   use_frameworks!
 
   # Pods for iOS_Playground
-  pod 'IDZSwiftCommonCrypto', '~> 0.10'
+  pod 'CryptoSwift'
   target 'iOS_PlaygroundTests' do
     inherit! :search_paths
     # Pods for testing

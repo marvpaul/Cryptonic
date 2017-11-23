@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		059985BB44EF701139B3474C /* Pods_iOS_Playground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6F4BFECB136619E4F16179 /* Pods_iOS_Playground.framework */; };
+		1E64F2661FC6E67400FC2918 /* cipherPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E64F2651FC6E67300FC2918 /* cipherPicker.swift */; };
 		1E89C2141FC41C6F009FA7CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89C2131FC41C6F009FA7CC /* AppDelegate.swift */; };
 		1E89C2161FC41C6F009FA7CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89C2151FC41C6F009FA7CC /* ViewController.swift */; };
 		1E89C2191FC41C6F009FA7CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E89C2171FC41C6F009FA7CC /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		18F59E693185A2283CFD318A /* Pods-iOS_PlaygroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_PlaygroundUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_PlaygroundUITests/Pods-iOS_PlaygroundUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1E64F2651FC6E67300FC2918 /* cipherPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cipherPicker.swift; sourceTree = "<group>"; };
 		1E89C2101FC41C6F009FA7CC /* iOS_Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E89C2131FC41C6F009FA7CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E89C2151FC41C6F009FA7CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,7 +55,6 @@
 		1E89C2331FC41C6F009FA7CC /* iOS_PlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_PlaygroundUITests.swift; sourceTree = "<group>"; };
 		1E89C2351FC41C6F009FA7CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E89C2411FC5C6E7009FA7CC /* CipherClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CipherClass.swift; sourceTree = "<group>"; };
-		1E89C2431FC5D88E009FA7CC /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
 		251EFFF32D3C7B040BB674C0 /* Pods-iOS_PlaygroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_PlaygroundTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_PlaygroundTests/Pods-iOS_PlaygroundTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2A6F4BFECB136619E4F16179 /* Pods_iOS_Playground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Playground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36ABFD4E489C179683D443EF /* Pods_iOS_PlaygroundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_PlaygroundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,11 +121,11 @@
 				1E89C2131FC41C6F009FA7CC /* AppDelegate.swift */,
 				1E89C2151FC41C6F009FA7CC /* ViewController.swift */,
 				1E89C2171FC41C6F009FA7CC /* Main.storyboard */,
+				1E64F2651FC6E67300FC2918 /* cipherPicker.swift */,
 				1E89C21A1FC41C6F009FA7CC /* Assets.xcassets */,
 				1E89C21C1FC41C6F009FA7CC /* LaunchScreen.storyboard */,
 				1E89C21F1FC41C6F009FA7CC /* Info.plist */,
 				1E89C2411FC5C6E7009FA7CC /* CipherClass.swift */,
-				1E89C2431FC5D88E009FA7CC /* Bridging.h */,
 			);
 			path = iOS_Playground;
 			sourceTree = "<group>";
@@ -346,11 +347,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOS_Playground/Pods-iOS_Playground-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/IDZSwiftCommonCrypto/IDZSwiftCommonCrypto.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IDZSwiftCommonCrypto.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -465,6 +466,7 @@
 			files = (
 				1E89C2421FC5C6E7009FA7CC /* CipherClass.swift in Sources */,
 				1E89C2161FC41C6F009FA7CC /* ViewController.swift in Sources */,
+				1E64F2661FC6E67400FC2918 /* cipherPicker.swift in Sources */,
 				1E89C2141FC41C6F009FA7CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

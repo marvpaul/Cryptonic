@@ -9,18 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController{
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
     @IBOutlet weak var displayLayer: UILabel!
     @IBOutlet weak var inputField: UITextField!
     @IBOutlet weak var textArea: UITextView!
     @IBOutlet weak var outTextArea: UITextView!
     @IBOutlet weak var passWd: UITextField!
+    @IBOutlet weak var cipherPickerView: UIPickerView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let pickerData = cipherPicker()
+        let pickerView = UIPickerView()
+        pickerView.dataSource = pickerData
+        pickerView.delegate = pickerData
+        pickerView.reloadAllComponents()
+        
+        cipherPickerView = pickerView
+        
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+   
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
